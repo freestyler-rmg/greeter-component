@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Greeter Component Demo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="./dist/greeter-component.umd.js"></script>
+    <link rel="stylesheet" href="./dist/greeter-component.css" />
+  </head>
+  <body>
+    <div id="my-component"></div>
+
+    <script>
+      Greeter.init('#my-component', {
+        message: 'Ho Ho Ho!',
+      });
+    </script>
+  </body>
+</html>
